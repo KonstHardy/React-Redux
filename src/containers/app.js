@@ -1,10 +1,10 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import { mapStateToProps, mapDispatchToProps } from '../mapDispatch';
+import React from "react";
+import { connect } from "react-redux";
+import { mapStateToProps, mapDispatchToProps } from "../store/dispatch";
 
-import './app.css';
-import AddToDo from '../components/add-todo/add-todo';
-import ToDoList from '../components/todo-list/todo-list';
+import AddComment from "../components/addComment";
+import ListComments from "../components/listComments";
+import "./App.css";
 
 let App = (props) => {
   const { todos, addTask, removeTask } = props;
@@ -12,8 +12,8 @@ let App = (props) => {
   return (
     <div className="todo-wrapper">
       <h1 className="title">Comment App (React + Redux)</h1>
-      <AddToDo addTask={addTask} />
-      <ToDoList todos={todos} removeTask={removeTask} />
+      <AddComment addTask={addTask} />
+      <ListComments todos={todos} removeTask={removeTask} />
     </div>
   );
 };

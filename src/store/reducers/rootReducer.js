@@ -1,23 +1,23 @@
-import { ADD_TASK, REMOVE_TASK } from '../constants';
-import getDate from '../components/getDate';
+import { ADD_TASK, REMOVE_TASK } from "../constants";
+import getDate from "../../components/getDate";
 
 const initialState = [
   {
     id: 1,
-    name: 'Iron Man',
-    text: 'Yeah it is.',
+    name: "Iron Man",
+    text: "Yeah it is.",
     date: getDate(),
   },
   {
     id: 2,
-    name: 'Professor Hulk',
-    text: 'No, man! React and Redux is realy cool!',
+    name: "Professor Hulk",
+    text: "No, man! React and Redux is realy cool!",
     date: getDate(),
   },
   {
     id: 3,
-    name: 'Peter Parker',
-    text: 'React and Redux is too hard :(',
+    name: "Peter Parker",
+    text: "React and Redux is too hard :(",
     date: getDate(),
   },
 ];

@@ -1,8 +1,8 @@
-import React from 'react';
-import './todo-list.css';
-import ToDoItem from '../todo-item/todo-item';
+import React from "react";
+import ItemComment from "../itemComment";
+import "./listComments.css";
 
-const ToDoList = (props) => {
+const ListComments = (props) => {
   const { todos, removeTask } = props;
 
   return (
@@ -11,7 +11,7 @@ const ToDoList = (props) => {
       <ul className="todo-list">
         {todos.length ? (
           todos.map(({ id, name, text, date }) => (
-            <ToDoItem
+            <ItemComment
               removeTask={removeTask}
               key={id}
               id={id}
@@ -30,4 +30,4 @@ const ToDoList = (props) => {
   );
 };
 
-export default ToDoList;
+export default ListComments;

@@ -1,5 +1,5 @@
-import { ADD_TASK, REMOVE_TASK } from '../constants';
-import getDate from '../components/getDate';
+import { ADD_TASK, REMOVE_TASK } from "../constants";
+import getDate from "../../components/getDate";
 
 export const addTask = (name, text, date) => ({
   type: ADD_TASK,

@@ -1,4 +1,4 @@
-import { addTask, removeTask } from './actions/actionCreator';
+import { addTask, removeTask } from "../actions/actionCreators";
 
 export const mapStateToProps = (state) => {
   return {

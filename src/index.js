@@ -1,11 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+import React from "react";
+import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
+import { createStore } from "redux";
 
-import './index.css';
-import App from './containers/app';
-import todos from './reducers/rootReducer';
+import todos from "./store/reducers/rootReducer";
+import App from "./containers/App";
+import "./index.css";
 
 const store = createStore(
   todos,
@@ -16,5 +16,5 @@ ReactDOM.render(
   <Provider store={store}>
     <App />
   </Provider>,
-  document.getElementById('root')
+  document.getElementById("root")
 );

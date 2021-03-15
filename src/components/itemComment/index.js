@@ -1,7 +1,7 @@
-import React from 'react';
-import './todo-item.css';
+import React from "react";
+import "./itemComment.css";
 
-const ToDoItem = ({ id, name, text, date, removeTask }) => (
+const ItemComment = ({ id, name, text, date, removeTask }) => (
   <li className="comment__item">
     <div className="comment__body">
       <div className="comment__title">
@@ -18,4 +18,4 @@ const ToDoItem = ({ id, name, text, date, removeTask }) => (
   </li>
 );
 
-export default ToDoItem;
+export default ItemComment;

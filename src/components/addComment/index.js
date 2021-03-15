@@ -1,17 +1,17 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import './add-todo.css';
-import { mapStateToProps, mapDispatchToProps } from '../../mapDispatch';
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import { mapStateToProps, mapDispatchToProps } from "../../store/dispatch";
+import "./addComment.css";
 
-class AddToDo extends Component {
+class AddComment extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      inputName: '',
-      textareaText: '',
+      inputName: "",
+      textareaText: "",
       addTask: {
-        name: '',
-        text: '',
+        name: "",
+        text: "",
       },
     };
     this.handleChange = this.handleChange.bind(this);
@@ -40,11 +40,11 @@ class AddToDo extends Component {
     addTask(inputName, textareaText);
 
     this.setState({
-      inputName: '',
-      textareaText: '',
+      inputName: "",
+      textareaText: "",
       addTask: {
-        name: '',
-        text: '',
+        name: "",
+        text: "",
       },
     });
   };
@@ -86,6 +86,6 @@ class AddToDo extends Component {
   }
 }
 
-AddToDo = connect(mapStateToProps, mapDispatchToProps)(AddToDo);
+AddComment = connect(mapStateToProps, mapDispatchToProps)(AddComment);
 
-export default AddToDo;
+export default AddComment;
