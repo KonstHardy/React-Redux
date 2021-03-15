@@ -7,13 +7,13 @@ import ListComments from "../components/listComments";
 import "./App.css";
 
 let App = (props) => {
-  const { todos, addTask, removeTask } = props;
+  const { comments, addComment, removeComment } = props;
 
   return (
     <div className="todo-wrapper">
       <h1 className="title">Comment App (React + Redux)</h1>
-      <AddComment addTask={addTask} />
-      <ListComments todos={todos} removeTask={removeTask} />
+      <AddComment addComment={addComment} />
+      <ListComments comments={comments} removeComment={removeComment} />
     </div>
   );
 };

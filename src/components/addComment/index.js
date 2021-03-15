@@ -9,7 +9,7 @@ class AddComment extends Component {
     this.state = {
       inputName: "",
       textareaText: "",
-      addTask: {
+      addComment: {
         name: "",
         text: "",
       },
@@ -36,13 +36,13 @@ class AddComment extends Component {
     console.log(this.props);
     console.log(inputName, textareaText);
 
-    const { addTask } = this.props;
-    addTask(inputName, textareaText);
+    const { addComment } = this.props;
+    addComment(inputName, textareaText);
 
     this.setState({
       inputName: "",
       textareaText: "",
-      addTask: {
+      addComment: {
         name: "",
         text: "",
       },

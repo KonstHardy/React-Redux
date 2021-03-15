@@ -1,30 +1,30 @@
-import { ADD_TASK, REMOVE_TASK } from "../constants";
-import getDate from "../../components/getDate";
+import { ADD_COMMENT, REMOVE_COMMENT } from "../constants";
+import GetDate from "../../components/getDate";
 
 const initialState = [
   {
     id: 1,
     name: "Iron Man",
     text: "Yeah it is.",
-    date: getDate(),
+    date: GetDate(),
   },
   {
     id: 2,
     name: "Professor Hulk",
     text: "No, man! React and Redux is realy cool!",
-    date: getDate(),
+    date: GetDate(),
   },
   {
     id: 3,
     name: "Peter Parker",
     text: "React and Redux is too hard :(",
-    date: getDate(),
+    date: GetDate(),
   },
 ];
 
-const todos = (state = initialState, { id, name, text, date, type }) => {
+const comments = (state = initialState, { id, name, text, date, type }) => {
   switch (type) {
-    case ADD_TASK:
+    case ADD_COMMENT:
       return [
         ...state,
         {
@@ -34,11 +34,11 @@ const todos = (state = initialState, { id, name, text, date, type }) => {
           date,
         },
       ];
-    case REMOVE_TASK:
-      return [...state].filter((todo) => todo.id !== id);
+    case REMOVE_COMMENT:
+      return [...state].filter((comment) => comment.id !== id);
     default:
       return state;
   }
 };
 
-export default todos;
+export default comments;

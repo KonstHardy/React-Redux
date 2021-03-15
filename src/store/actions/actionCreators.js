@@ -1,15 +1,15 @@
-import { ADD_TASK, REMOVE_TASK } from "../constants";
-import getDate from "../../components/getDate";
+import { ADD_COMMENT, REMOVE_COMMENT } from "../constants";
+import GetDate from "../../components/getDate";
 
-export const addTask = (name, text, date) => ({
-  type: ADD_TASK,
+export const addComment = (name, text, date) => ({
+  type: ADD_COMMENT,
   id: Date.now().toString(),
   name,
   text,
-  date: getDate(),
+  date: GetDate(),
 });
 
-export const removeTask = (id) => ({
-  type: REMOVE_TASK,
+export const removeComment = (id) => ({
+  type: REMOVE_COMMENT,
   id,
 });
