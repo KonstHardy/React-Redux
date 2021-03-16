@@ -8,7 +8,7 @@ class AddComment extends Component {
     super(props);
     this.state = {
       inputName: "",
-      textareaText: "",
+      inputText: "",
       addComment: {
         name: "",
         text: "",
@@ -31,17 +31,17 @@ class AddComment extends Component {
   }
   handleSubmit = (e) => {
     e.preventDefault();
-    const { inputName, textareaText } = this.state;
+    const { inputName, inputText } = this.state;
 
     console.log(this.props);
-    console.log(inputName, textareaText);
+    console.log(inputName, inputText);
 
     const { addComment } = this.props;
-    addComment(inputName, textareaText);
+    addComment(inputName, inputText);
 
     this.setState({
       inputName: "",
-      textareaText: "",
+      inputText: "",
       addComment: {
         name: "",
         text: "",
@@ -73,8 +73,8 @@ class AddComment extends Component {
               className="form__inputText"
               placeholder="Enter your comment"
               required
-              value={this.state.textareaText}
-              name="textareaText"
+              value={this.state.inputText}
+              name="inputText"
               type="text"
               onChange={this.handleChange}
             ></textarea>
