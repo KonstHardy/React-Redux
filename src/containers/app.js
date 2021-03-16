@@ -11,7 +11,7 @@ let App = (props) => {
 
   return (
     <div className="todo-wrapper">
-      <h1 className="title">Comment App (React + Redux)</h1>
+      <h1 className="title">react-redux__comments-app</h1>
       <AddComment addComment={addComment} />
       <ListComments comments={comments} removeComment={removeComment} />
     </div>
