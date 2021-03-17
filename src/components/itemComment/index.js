@@ -1,5 +1,5 @@
 import React from "react";
-import "./itemComment.css";
+import "./ItemComment.css";
 
 const ItemComment = ({ id, name, text, date, removeComment }) => (
   <li className="comment__item">
@@ -11,7 +11,7 @@ const ItemComment = ({ id, name, text, date, removeComment }) => (
       <p className="comment__text">{text}</p>
     </div>
 
-    <button onClick={() => removeComment(id)} className="btn__remove">
+    <button className="btn__remove" onClick={() => removeComment(id)}>
       <span className="btn__line"></span>
       <span className="btn__line"></span>
     </button>
