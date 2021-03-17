@@ -1,6 +1,6 @@
 import React from "react";
 import ItemComment from "../itemComment";
-import "./ListComments.css";
+import "./listComments.css";
 
 const ListComments = (props) => {
   const { comments, removeComment } = props;

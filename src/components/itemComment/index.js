@@ -1,5 +1,5 @@
 import React from "react";
-import "./ItemComment.css";
+import "./itemComment.css";
 
 const ItemComment = ({ id, name, text, date, removeComment }) => (
   <li className="comment__item">

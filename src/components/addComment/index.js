@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { mapStateToProps, mapDispatchToProps } from "../../store/dispatch";
-import "./AddComment.css";
+import "./addComment.css";
 
 class AddComment extends Component {
   constructor(props) {

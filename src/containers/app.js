@@ -4,7 +4,7 @@ import { mapStateToProps, mapDispatchToProps } from "../store/dispatch";
 
 import AddComment from "../components/addComment";
 import ListComments from "../components/listComments";
-import "./App.css";
+import "./app.css";
 
 let App = (props) => {
   const { comments, addComment, removeComment } = props;
