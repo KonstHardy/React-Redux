@@ -10,7 +10,7 @@ let App = (props) => {
   const { comments, addComment, removeComment } = props;
 
   return (
-    <div className="todo-wrapper">
+    <div className="wrapper">
       <h1 className="title">react-redux__comments-app</h1>
       <AddComment addComment={addComment} />
       <ListComments comments={comments} removeComment={removeComment} />
