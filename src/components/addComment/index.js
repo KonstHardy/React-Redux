@@ -51,34 +51,37 @@ class AddComment extends Component {
 
   render() {
     return (
-      <div className="container">
-        <form className="form" onSubmit={this.handleSubmit}>
-          <div className="form__comment">
-            <input
-              className="form__inputName"
+      <>
+        <h2 className="subtitle">Your comment:</h2>
+        <div className="container">
+          <form className="form" onSubmit={this.handleSubmit}>
+            <div className="form__comment">
+              <input
+                className="form__inputName"
+                required
+                placeholder="Enter your name"
+                type="text"
+                name="inputName"
+                value={this.state.inputName}
+                onChange={this.handleChange}
+              ></input>
+              <button className="btn__submit" type="submit">
+                Add comment
+              </button>
+            </div>
+            <textarea
+              className="form__inputText"
               required
-              placeholder="Enter your name"
+              placeholder="Enter your comment"
               type="text"
-              name="inputName"
-              value={this.state.inputName}
+              name="inputText"
+              value={this.state.inputText}
               onChange={this.handleChange}
-            ></input>
-            <button className="btn__submit" type="submit">
-              Add comment
-            </button>
-          </div>
-          <textarea
-            className="form__inputText"
-            required
-            placeholder="Enter your comment"
-            type="text"
-            name="inputText"
-            value={this.state.inputText}
-            onChange={this.handleChange}
-          ></textarea>
-        </form>
-        <img className="img__react" src="./../logo192.png" alt="React logo" />
-      </div>
+            ></textarea>
+          </form>
+          <img className="img__react" src="./../logo192.png" alt="React logo" />
+        </div>
+      </>
     );
   }
 }
