@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { mapStateToProps, mapDispatchToProps } from "../../store/dispatch";
-import "./addComment.css";
+import "./AddComment.css";
 
 class AddComment extends Component {
   constructor(props) {
@@ -51,36 +51,33 @@ class AddComment extends Component {
 
   render() {
     return (
-      <div>
-        <h2 className="subtitle">Your comment:</h2>
-        <div className="container">
-          <form className="form" onSubmit={this.handleSubmit}>
-            <div className="form__comment">
-              <input
-                className="form__inputName"
-                placeholder="Enter your name"
-                required
-                value={this.state.inputName}
-                name="inputName"
-                type="text"
-                onChange={this.handleChange}
-              ></input>
-              <button className="btn__submit" type="submit">
-                Add comment
-              </button>
-            </div>
-            <textarea
-              className="form__inputText"
-              placeholder="Enter your comment"
+      <div className="container">
+        <form className="form" onSubmit={this.handleSubmit}>
+          <div className="form__comment">
+            <input
+              className="form__inputName"
               required
-              value={this.state.inputText}
-              name="inputText"
+              placeholder="Enter your name"
               type="text"
+              name="inputName"
+              value={this.state.inputName}
               onChange={this.handleChange}
-            ></textarea>
-          </form>
-          <img className="img__react" src="./../logo192.png" alt="logo-react" />
-        </div>
+            ></input>
+            <button className="btn__submit" type="submit">
+              Add comment
+            </button>
+          </div>
+          <textarea
+            className="form__inputText"
+            required
+            placeholder="Enter your comment"
+            type="text"
+            name="inputText"
+            value={this.state.inputText}
+            onChange={this.handleChange}
+          ></textarea>
+        </form>
+        <img className="img__react" src="./../logo192.png" alt="React logo" />
       </div>
     );
   }
