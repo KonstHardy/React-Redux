@@ -1,14 +1,14 @@
 import React from "react";
 import ItemComment from "../itemComment";
-import "./listComments.css";
+import "./ListComments.css";
 
 const ListComments = (props) => {
   const { comments, removeComment } = props;
 
   return (
-    <div>
+    <>
       <h2 className="subtitle">List of comments:</h2>
-      <ul className="todo-list">
+      <ul className="comments__list">
         {comments.length ? (
           comments.map(({ id, name, text, date }) => (
             <ItemComment
@@ -26,7 +26,7 @@ const ListComments = (props) => {
           </p>
         )}
       </ul>
-    </div>
+    </>
   );
 };
 

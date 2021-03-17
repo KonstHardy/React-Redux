@@ -1,5 +1,8 @@
-.todo-list {
+.comments__list {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+.emptyCommenstList {
+  color: #6b6b6b;
 }
