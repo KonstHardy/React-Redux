@@ -1,7 +1,9 @@
 {
-  "name": "my-app",
+  "name": "react-redux__comments-app",
   "version": "0.1.0",
+  "description": "Web App with custom design built with React and Redux allows to add and remove comments",
   "private": true,
+  "author": "KonstHardy",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.1.2",
