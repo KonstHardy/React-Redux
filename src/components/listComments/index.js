@@ -21,7 +21,7 @@ const ListComments = (props) => {
             />
           ))
         ) : (
-          <p className="emptyCommenstList">
+          <p className="emptyCommentsList">
             Here are no comments. Write the first comment.
           </p>
         )}
