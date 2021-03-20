@@ -26,13 +26,13 @@ const comments = (state = initialState, { id, name, text, date, type }) => {
   switch (type) {
     case ADD_COMMENT:
       return [
-        ...state,
         {
           id,
           name,
           text,
           date,
         },
+        ...state,
       ];
     case REMOVE_COMMENT:
       return [...state].filter((comment) => comment.id !== id);
