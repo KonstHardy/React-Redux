@@ -1,7 +1,7 @@
 {
   "name": "react-redux__comments-app",
   "version": "0.1.0",
-  "description": "Web App with custom design built with React and Redux allows to add and remove comments",
+  "description": "Web App with custom design built with React.js & Redux allows to add and remove comments and save results in localStorage",
   "private": true,
   "author": "KonstHardy",
   "dependencies": {
