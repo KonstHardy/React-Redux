@@ -22,7 +22,17 @@ const initialState = [
   },
 ];
 
-const comments = (state = initialState, { id, name, text, date, type }) => {
+let savedComments;
+
+try {
+  savedComments =
+    JSON.parse(localStorage.getItem("reduxState")) || initialState;
+} catch (error) {
+  savedComments = [];
+  localStorage.removeItem("reduxState");
+}
+
+const comments = (state = savedComments, { id, name, text, date, type }) => {
   switch (type) {
     case ADD_COMMENT:
       return [
