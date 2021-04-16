@@ -93,7 +93,6 @@
 .img__react {
   object-fit: contain;
   height: 145px;
-  filter: drop-shadow(0.15rem 0.15rem 0.2rem rgba(0, 0, 0, 0.45));
   animation: img__react--roll 125s linear infinite;
 }
 @keyframes img__react--roll {

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { mapStateToProps, mapDispatchToProps } from "../../store/dispatch";
+import logo from "./../../img/logo192.png";
 import "./addComment.css";
 
 class AddComment extends Component {
@@ -79,7 +80,7 @@ class AddComment extends Component {
               onChange={this.handleChange}
             ></textarea>
           </form>
-          <img className="img__react" src="./../logo192.png" alt="React logo" />
+          <img className="img__react" src={logo} alt="React logo" />
         </div>
       </>
     );
