@@ -7,10 +7,8 @@
 .img__react {
   position: absolute;
   z-index: -1;
-  object-fit: contain;
-  height: 100vh;
-  top: 10rem;
-  left: -55vw;
+  left: 75%;
+  height: 95vh;
   animation: img__react--roll 350s linear infinite;
 }
 @keyframes img__react--roll {
@@ -25,11 +23,10 @@
   margin-top: 0;
   margin-bottom: 5rem;
   text-align: center;
-  color: #fff;
-  text-shadow: 3px 2px 5px rgb(97 218 251 / 70%);
+  color: #61dafb;
+  text-shadow: 2px 1px 5px rgb(255 255 255 / 60%);
 }
 .subtitle {
-  color: #f30085;
+  color: #61dafb;
   text-decoration: underline;
-  text-shadow: 1px 0px 0px #f30085, 0 0 1.5em #000;
 }

@@ -45,7 +45,7 @@
 .form__inputName:hover,
 .form__inputText:hover {
   transform: scale(1.02);
-  box-shadow: 0 5px 15px 0 rgb(97, 218, 251, 0.6);
+  box-shadow: 0 5px 15px 0 rgb(255, 251, 251, 0.35);
 }
 .btn__submit {
   position: relative;
