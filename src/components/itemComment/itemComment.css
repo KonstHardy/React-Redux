@@ -7,12 +7,13 @@
   border-radius: 8px;
   border: 1px solid #a7a7a7;
   cursor: pointer;
+  background: #eaeaea;
   box-shadow: 2px 2px 6px rgb(0 0 0 / 30%);
   transition: transform 0.1s linear, box-shadow 0.15s linear;
 }
 .comment__item:hover {
   transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.35);
+  box-shadow: 0 5px 15px 0 rgb(97, 218, 251, 0.6);
 }
 .comment__title {
   display: flex;
@@ -24,8 +25,8 @@
 }
 .comment__time {
   margin: 0 0 0 15px;
-  color: #888888;
   font-size: 12px;
+  color: #888888;
 }
 .comment__text {
   margin: 0;
@@ -35,12 +36,12 @@
   display: block;
   width: 20px;
   height: 20px;
-  border: none;
-  background: none;
   padding: 0;
   margin-left: auto;
+  border: none;
   outline: none;
   cursor: pointer;
+  background: none;
   transition: transform 0.3s linear;
 }
 .btn__remove:hover {
@@ -51,10 +52,10 @@
   display: block;
   width: 20px;
   height: 2px;
-  background-color: #8993ad;
-  transform: rotate(45deg);
   top: 50%;
   left: 0;
+  background: #8993ad;
+  transform: rotate(45deg);
   box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
 }
 .btn__line:last-child {
@@ -62,5 +63,5 @@
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 .btn__remove:hover > .btn__line {
-  background-color: #e9205cf5;
+  background: #e9205cf5;
 }

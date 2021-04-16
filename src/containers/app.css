@@ -1,15 +1,35 @@
 .wrapper {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  position: relative;
+  padding: 5rem 1.5rem;
   margin: 0 auto;
   width: 600px;
+}
+.img__react {
+  position: absolute;
+  z-index: -1;
+  object-fit: contain;
+  height: 100vh;
+  top: 10rem;
+  left: -55vw;
+  animation: img__react--roll 350s linear infinite;
+}
+@keyframes img__react--roll {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 .title {
   margin-top: 0;
   margin-bottom: 5rem;
   text-align: center;
-  text-shadow: 2px 2px 5px rgb(0 0 0 / 55%);
+  color: #fff;
+  text-shadow: 3px 2px 5px rgb(97 218 251 / 70%);
 }
 .subtitle {
+  color: #f30085;
   text-decoration: underline;
+  text-shadow: 1px 0px 0px #f30085, 0 0 1.5em #000;
 }
