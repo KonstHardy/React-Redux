@@ -2,7 +2,7 @@
 
 ### Description
 
-Web App with custom design built with React.js & Redux allows to add and remove comments and save results in localStorage
+Web App with a custom design built with React.js & Redux allows to add and remove comments and save results in localStorage
 
 
 ## Available Scripts
