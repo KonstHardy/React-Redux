@@ -4,20 +4,20 @@ import GetDate from "../../components/getDate";
 const initialState = [
   {
     id: 1,
-    name: "Iron Man",
-    text: "Yeah it is.",
+    name: "Clark Kent",
+    text: "Redux is mostly used as a state management tool for your app.",
     date: GetDate(),
   },
   {
     id: 2,
-    name: "Professor Hulk",
-    text: "No, man! React and Redux is realy cool!",
+    name: "Bruce Wayne",
+    text: "Redux helps you deal with application state management.",
     date: GetDate(),
   },
   {
     id: 3,
-    name: "Peter Parker",
-    text: "React and Redux is too hard :(",
+    name: "Aquaman",
+    text: "So why do I need Redux?",
     date: GetDate(),
   },
 ];
