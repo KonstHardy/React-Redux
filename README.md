@@ -4,6 +4,10 @@
 
 Web App with a custom design built with React.js & Redux allows to add and remove comments and save results in localStorage
 
+### Preview
+
+![Preview](./preview/preview.gif)
+
 
 ## Available Scripts
 
