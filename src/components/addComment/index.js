@@ -63,7 +63,7 @@ class AddComment extends Component {
                 value={this.state.inputName}
                 onChange={this.handleChange}
                 placeholder="Enter your name"
-                autocomplete="off"
+                autoComplete="off"
                 required
               ></input>
               <button className="btn__submit" type="submit">
