@@ -1,37 +1,17 @@
-# react-redux__comments-app
-
-### Description
-
-Web App with a custom design built with React.js & Redux allows to add and remove comments and save results in localStorage
-
-### Preview
-
 ![Preview](./preview/preview.gif)
 
+## Preview
 
-## Available Scripts
+You can check out [live preview](https://konsthardy.github.io/react-redux__comments-app/).
 
-In the project directory, you can run:
+## Quick Start
 
-### `npm start`
+1.  Clone the repo `git clone https://github.com/KonstHardy/react-redux__comments-app.git`   
+2.  Go to your project folder from your terminal
+3.  Run: `npm install` 
+4.  After install, run: `npm start`
+5.  It will open your browser (http://localhost:3000)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Note
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-
-## Live Demo
-
-Live Project URL: [react-redux__comments-app](https://konsthardy.github.io/react-redux__comments-app/)
+This project is built on top of [Create React App](https://github.com/facebook/create-react-app), which means all features that create-react-app supports are available.
