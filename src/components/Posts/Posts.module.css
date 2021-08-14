@@ -1,0 +1,8 @@
+.postsList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.emptyPostsList {
+  color: var(--color-bgField);
+}

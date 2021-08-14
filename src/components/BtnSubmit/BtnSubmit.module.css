@@ -1,0 +1,46 @@
+.root {
+  position: relative;
+  display: block;
+  width: 215px;
+  height: 55px;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  border-radius: 5px;
+  border: 1px solid var(--color-border);
+  outline: none;
+  cursor: pointer;
+  color: var(--color-text);
+  background: var(--color-blue);
+  box-shadow: 2px 2px 5px var(--color-boxShadow);
+  transition: color 0.1s linear, letter-spacing 0.1s linear,
+    transform 0.1s linear;
+}
+.root::before,
+.root::after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  border-radius: 5px;
+  background: var(--color-activeAdd);
+}
+.root:hover {
+  border: none;
+  color: var(--color-bgField);
+  letter-spacing: 1px;
+  transform: scale(1.04);
+}
+.root::after {
+  height: 0;
+  width: 0;
+  top: 50%;
+  left: 50%;
+  transition: all 0.2s;
+}
+.root:hover::after {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}

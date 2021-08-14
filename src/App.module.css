@@ -1,0 +1,31 @@
+.app {
+  min-height: 100vh;
+}
+.appWrapper {
+  position: relative;
+  width: 600px;
+  padding: 5rem 1.5rem;
+  margin: 0 auto;
+}
+.title {
+  margin-top: 0;
+  margin-bottom: 5rem;
+  text-align: center;
+  color: var(--color-blue);
+  text-shadow: 2px 1px 5px var(--color-titleShadow);
+}
+.logo {
+  position: absolute;
+  height: 95vh;
+  left: 75%;
+  z-index: -1;
+  animation: logo--roll 350s linear infinite;
+}
+@keyframes logo--roll {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

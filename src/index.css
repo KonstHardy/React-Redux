@@ -9,22 +9,44 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
-  background: #171717;
+  height: 100%;
   overflow-x: hidden;
   overflow-y: overlay;
-  height: 100%;
+  background: var(--color-bgApp);
 }
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(90, 90, 90);
+  background: var(--color-scrollbar-thumb);
 }
 ::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.2);
+  background: var(--color-scrollbar-track);
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+:root {
+  --color-blue: #61dafb;
+
+  --color-text: #202020;
+  --color-time: #888888;
+  --color-border: #a7a7a7;
+  --color-scrollbar-thumb: rgba(90, 90, 90);
+  --color-scrollbar-track: rgba(0, 0, 0, 0.2);
+
+  --color-activeAdd: #f30085;
+  --color-activeRemove: #e9205cf5;
+
+  --color-boxShadow: rgba(0, 0, 0, 0.5);
+  --color-boxShadowHover: rgb(255, 251, 251, 0.35);
+  --color-titleShadow: rgb(255, 255, 255, 0.6);
+
+  --color-bgApp: #171717;
+  --color-bgPost: #eaeaea;
+  --color-bgField: #fffbfb;
+  --color-bgRemove: #8993ad;
 }
